@@ -1,0 +1,3 @@
+Q: What is mask_clip?
+A: Here`s what I know about mask_clip ( mask clip ) or what it`s used for:
+Values below the selected range will be treated as black mask, values above - as white.

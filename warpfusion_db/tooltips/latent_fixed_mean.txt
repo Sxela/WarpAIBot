@@ -1,0 +1,3 @@
+Q: What is latent_fixed_mean?
+A: Here`s what I know about latent_fixed_mean ( latent fixed mean ) or what it`s used for:
+User defined mean value for normalize_latent=user_Defined mode

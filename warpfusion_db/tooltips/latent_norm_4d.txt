@@ -1,0 +1,3 @@
+Q: What is latent_norm_4d?
+A: Here`s what I know about latent_norm_4d ( latent norm 4d ) or what it`s used for:
+Normalize on a per-channel basis (on by default)

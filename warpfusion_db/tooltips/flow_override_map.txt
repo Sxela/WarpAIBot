@@ -1,0 +1,3 @@
+Q: What is flow_override_map?
+A: Here`s what I know about flow_override_map ( flow override map ) or what it`s used for:
+Experimental. Motion vector maps mixer. Allows changing frame-motion vetor indexes or repeating motion, provides a glitchy effect.

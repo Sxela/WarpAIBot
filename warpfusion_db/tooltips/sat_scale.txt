@@ -1,0 +1,3 @@
+Q: What is sat_scale?
+A: Here`s what I know about sat_scale ( sat scale ) or what it`s used for:
+Saturation scale limits oversaturation.

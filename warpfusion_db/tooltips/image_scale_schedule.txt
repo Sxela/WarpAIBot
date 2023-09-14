@@ -1,0 +1,3 @@
+Q: What is image_scale_schedule?
+A: Here`s what I know about image_scale_schedule ( image scale schedule ) or what it`s used for:
+Only used with InstructPix2Pix Model. Guidance towards text prompt. 1.5 is a good starting value

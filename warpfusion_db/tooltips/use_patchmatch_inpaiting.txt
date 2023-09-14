@@ -1,0 +1,3 @@
+Q: What is use_patchmatch_inpaiting?
+A: Here`s what I know about use_patchmatch_inpaiting ( use patchmatch inpaiting ) or what it`s used for:
+Uses patchmatch inapinting for inconsistent areas. Is slow.

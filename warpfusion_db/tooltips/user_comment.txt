@@ -1,0 +1,3 @@
+Q: What is user_comment?
+A: Here`s what I know about user_comment ( user comment ) or what it`s used for:
+Enter a comment to differentiate between save files.

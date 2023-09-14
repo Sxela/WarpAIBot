@@ -1,0 +1,3 @@
+Q: What is warp_num_k?
+A: Here`s what I know about warp_num_k ( warp num k ) or what it`s used for:
+Nubmer of clusters in forward-warp mode. The more - the smoother is the motion. Lower values move larger chunks of image at a time.

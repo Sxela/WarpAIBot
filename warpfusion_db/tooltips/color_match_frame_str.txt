@@ -1,0 +1,3 @@
+Q: What is color_match_frame_str?
+A: Here`s what I know about color_match_frame_str ( color match frame str ) or what it`s used for:
+Colormatching strength. 0 - no colormatching effect.

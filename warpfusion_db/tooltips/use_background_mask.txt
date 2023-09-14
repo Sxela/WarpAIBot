@@ -1,0 +1,3 @@
+Q: What is use_background_mask?
+A: Here`s what I know about use_background_mask ( use background mask ) or what it`s used for:
+Enable masking. In order to use it, you have to either extract or provide an existing mask in Video Masking cell.

@@ -1,0 +1,3 @@
+Q: What is control_sd15_shuffle_source?
+A: Here`s what I know about control_sd15_shuffle_source ( control sd15 shuffle source ) or what it`s used for:
+Shuffle controlnet source. color_video: uses color video frames (or single image) as source, init - uses current frame`s init as source (stylized+warped with consistency mask and flow_blend opacity), prev_frame - uses previously stylized frame (stylized, not warped), first_frame - first stylized frame

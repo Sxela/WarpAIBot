@@ -1,0 +1,3 @@
+Q: What is rec_cfg?
+A: Here`s what I know about rec_cfg ( rec cfg ) or what it`s used for:
+CFG scale for noise reconstruction. 1-1.9 are the best values.

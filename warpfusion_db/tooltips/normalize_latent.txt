@@ -1,0 +1,3 @@
+Q: What is normalize_latent?
+A: Here`s what I know about normalize_latent ( normalize latent ) or what it`s used for:
+Normalize latent to prevent it from overflowing. User defined: use fixed input values (latent_fixed_*) Stylized/init frame - match towards stylized/init frame with a fixed number (specified in the offset field below). Stylized\init frame offset - match to a frame with a number=current frame - offset (specified in the offset filed below).

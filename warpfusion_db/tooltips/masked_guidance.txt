@@ -1,0 +1,3 @@
+Q: What is masked_guidance?
+A: Here`s what I know about masked_guidance ( masked guidance ) or what it`s used for:
+Use mask for init/latent guidance to ignore inconsistencies and only guide based on the consistent areas.

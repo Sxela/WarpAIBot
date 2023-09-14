@@ -1,0 +1,3 @@
+Q: What is normalize_cn_weights?
+A: Here`s what I know about normalize_cn_weights ( normalize cn weights ) or what it`s used for:
+Normalize controlnet weights to add up to 1. Off=keep raw controlnet weight values.

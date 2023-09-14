@@ -1,0 +1,3 @@
+Q: What is background?
+A: Here`s what I know about background ( background ) or what it`s used for:
+Background type. Image - uses static image specified in background_source, color - uses fixed color specified in background_source, init_video - uses raw init video for masked areas.

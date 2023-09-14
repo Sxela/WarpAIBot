@@ -1,0 +1,3 @@
+Q: What is latent_fixed_std?
+A: Here`s what I know about latent_fixed_std ( latent fixed std ) or what it`s used for:
+User defined standard deviation value for normalize_latent=user_Defined mode

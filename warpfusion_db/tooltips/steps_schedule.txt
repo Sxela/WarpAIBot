@@ -1,0 +1,3 @@
+Q: What is steps_schedule?
+A: Here`s what I know about steps_schedule ( steps schedule ) or what it`s used for:
+Total diffusion steps schedule. Use list format like [50,70], where each element corresponds to a frame, last element being repeated forever, or dictionary like {0:50, 20:70} format to specify keyframes only.

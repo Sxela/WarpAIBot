@@ -1,0 +1,3 @@
+Q: What is check_consistency?
+A: Here`s what I know about check_consistency ( check consistency ) or what it`s used for:
+Enables consistency checking (CC). CC is used to avoid ghosting and trails, that appear due to lack of information while warping frames. It allows replacing motion edges, frame borders, incorrectly moved areas with raw init frame data.

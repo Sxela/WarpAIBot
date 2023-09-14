@@ -1,0 +1,3 @@
+Q: What is controlnet_preprocess?
+A: Here`s what I know about controlnet_preprocess ( controlnet preprocess ) or what it`s used for:
+preprocess input conditioning image for controlnet. If false, use raw conditioning as input to the model without detection/preprocessing.

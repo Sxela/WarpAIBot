@@ -1,0 +1,3 @@
+Q: What is cond_image_src?
+A: Here`s what I know about cond_image_src ( cond image src ) or what it`s used for:
+Depth map source for depth model. It can either take raw init video frame or previously stylized frame.

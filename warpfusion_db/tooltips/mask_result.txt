@@ -1,0 +1,3 @@
+Q: What is mask_result?
+A: Here`s what I know about mask_result ( mask result ) or what it`s used for:
+Stylizes only inconsistent areas. Takes consistent areas from the previous frame.

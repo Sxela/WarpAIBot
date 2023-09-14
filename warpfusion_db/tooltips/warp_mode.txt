@@ -1,0 +1,3 @@
+Q: What is warp_mode?
+A: Here`s what I know about warp_mode ( warp mode ) or what it`s used for:
+Experimental. Apply warp to latent vector. May get really blurry, but reduces feedback loop effect for slow movement

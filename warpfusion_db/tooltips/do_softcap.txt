@@ -1,0 +1,3 @@
+Q: What is do_softcap?
+A: Here`s what I know about do_softcap ( do softcap ) or what it`s used for:
+Softly clamp latent excessive values. Reduces feedback loop effect a bit.

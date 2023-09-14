@@ -1,0 +1,3 @@
+Q: What is padding_ratio?
+A: Here`s what I know about padding_ratio ( padding ratio ) or what it`s used for:
+Amount of padding. Padding is used to avoid black edges when the camera is moving out of the frame.

@@ -1,0 +1,3 @@
+Q: What is soften_consistency_mask_for_turbo_frames?
+A: Here`s what I know about soften_consistency_mask_for_turbo_frames ( soften consistency mask for turbo frames ) or what it`s used for:
+Clips the consistency mask, reducing it`s effect

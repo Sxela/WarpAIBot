@@ -1,0 +1,3 @@
+Q: What is latent_scale_schedule?
+A: Here`s what I know about latent_scale_schedule ( latent scale schedule ) or what it`s used for:
+Latents scale defines how much minimize difference between output and input stylized image in latent space.

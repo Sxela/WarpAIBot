@@ -1,0 +1,3 @@
+Q: What is control_sd15_shuffle_1st_source?
+A: Here`s what I know about control_sd15_shuffle_1st_source ( control sd15 shuffle 1st source ) or what it`s used for:
+Set 1st frame source for shuffle model. If you need to geet the 1st frame style from your image, and for the consecutive frames you want to use the resulting stylized images. color_video: uses color video frames (or single image) as source, init - uses current frame`s init as source (raw video frame), None - skips this controlnet for the 1st frame. For example, if you like the 1st frame you`re getting and want to keep its style, but don`t want to use an external image as a source.

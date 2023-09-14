@@ -1,0 +1,3 @@
+Q: What is match_color_strength?
+A: Here`s what I know about match_color_strength ( match color strength ) or what it`s used for:
+Enables colormathing raw init video pixls in inconsistent areas only to the stylized frame. May reduce flickering for inconsistent areas.

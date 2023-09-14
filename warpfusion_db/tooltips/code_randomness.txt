@@ -1,0 +1,3 @@
+Q: What is code_randomness?
+A: Here`s what I know about code_randomness ( code randomness ) or what it`s used for:
+Fixed seed amount/effect strength.

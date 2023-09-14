@@ -1,0 +1,3 @@
+Q: What is use_predicted_noise?
+A: Here`s what I know about use_predicted_noise ( use predicted noise ) or what it`s used for:
+Reconstruct initial noise from init / stylized image.

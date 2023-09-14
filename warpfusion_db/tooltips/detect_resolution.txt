@@ -1,0 +1,3 @@
+Q: What is detect_resolution?
+A: Here`s what I know about detect_resolution ( detect resolution ) or what it`s used for:
+Control net conditioning image resolution. The size of the image passed into controlnet preprocessors. Suggest keeping this as high as you can fit into your VRAM for more details.

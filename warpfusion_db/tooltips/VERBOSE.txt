@@ -1,0 +1,3 @@
+Q: What is VERBOSE?
+A: Here`s what I know about VERBOSE ( VERBOSE ) or what it`s used for:
+Print all logs

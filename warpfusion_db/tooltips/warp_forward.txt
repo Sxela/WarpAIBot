@@ -1,0 +1,3 @@
+Q: What is warp_forward?
+A: Here`s what I know about warp_forward ( warp forward ) or what it`s used for:
+Experimental. Enable patch-based flow warping. Groups pixels by motion direction and moves them together, instead of moving individual pixels.

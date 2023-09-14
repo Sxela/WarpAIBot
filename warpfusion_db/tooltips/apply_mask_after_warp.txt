@@ -1,0 +1,3 @@
+Q: What is apply_mask_after_warp?
+A: Here`s what I know about apply_mask_after_warp ( apply mask after warp ) or what it`s used for:
+On to reduce ghosting. Apply mask after warping and blending warped image with current raw frame. If off, only current frame will be masked, previous frame will be warped and blended wuth masked current frame.

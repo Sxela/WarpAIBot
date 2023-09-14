@@ -1,0 +1,3 @@
+Q: What is use_karras_noise?
+A: Here`s what I know about use_karras_noise ( use karras noise ) or what it`s used for:
+Enable for samplers that have K at their name`s end.

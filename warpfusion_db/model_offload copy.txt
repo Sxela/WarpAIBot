@@ -1,0 +1,2 @@
+Q: What is model offload?
+A: Offloading model is placing it to CPU when it's not being used, and places it back onto the GPU when it's being used, resulting in lover VRAM usage at a cost of a delay.

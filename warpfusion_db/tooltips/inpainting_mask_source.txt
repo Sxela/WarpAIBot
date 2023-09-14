@@ -1,0 +1,3 @@
+Q: What is inpainting_mask_source?
+A: Here`s what I know about inpainting_mask_source ( inpainting mask source ) or what it`s used for:
+Inpainting model mask source. none - full white mask (inpaint whole image), consistency_mask - inpaint inconsistent areas only

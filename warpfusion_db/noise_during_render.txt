@@ -1,0 +1,3 @@
+Q: I'm getting only noise output result during generations / renders
+A: This may happen due to a base model version mismatch between the model_version you have selected and the checkpoint file you have provided.
+Please go to load model cell and check that your selected model version corresponds to the your checkpoint's base model, that you've provided via model path

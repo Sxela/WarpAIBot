@@ -1,0 +1,3 @@
+Q: What is colormatch_frame?
+A: Here`s what I know about colormatch_frame ( colormatch frame ) or what it`s used for:
+Match frame colors to prevent it from overflowing.  Stylized/init frame - match towards stylized/init frame with a fixed number (specified in the offset filed below). Stylized\init frame offset - match to a frame with a number=current frame - offset (specified in the offset field below).

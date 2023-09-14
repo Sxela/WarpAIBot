@@ -1,0 +1,3 @@
+Q: What is rec_randomness?
+A: Here`s what I know about rec_randomness ( rec randomness ) or what it`s used for:
+Reconstructed noise randomness. 0 - reconstructed noise only. 1 - random noise.

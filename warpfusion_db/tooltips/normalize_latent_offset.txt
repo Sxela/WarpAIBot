@@ -1,0 +1,3 @@
+Q: What is normalize_latent_offset?
+A: Here`s what I know about normalize_latent_offset ( normalize latent offset ) or what it`s used for:
+Offset from current frame number for *_frame_offset mode, or fixed frame number for *frame mode.

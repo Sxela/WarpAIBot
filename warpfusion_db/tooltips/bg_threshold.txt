@@ -1,0 +1,3 @@
+Q: What is bg_threshold?
+A: Here`s what I know about bg_threshold ( bg threshold ) or what it`s used for:
+Control net depth/normal bg cutoff threshold

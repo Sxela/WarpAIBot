@@ -1,0 +1,3 @@
+Q: What is dynamic_thresh?
+A: Here`s what I know about dynamic_thresh ( dynamic thresh ) or what it`s used for:
+Limit diffusion model prediction output. Lower values may introduce clamping/feedback effect

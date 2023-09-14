@@ -1,0 +1,3 @@
+Q: What is consistency_dilate?
+A: Here`s what I know about consistency_dilate ( consistency dilate ) or what it`s used for:
+expand consistency mask without blurring the edges

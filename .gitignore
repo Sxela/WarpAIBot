@@ -161,9 +161,10 @@ cython_debug/
 
 run.bat
 parsed/
-warpfusion_db/
+warpfusion_db/parsed/
 get-pip.py
 python.zip
 langchain.ipynb
 Nous-Hermes-13B-GPTQ/
 python/
+.chroma

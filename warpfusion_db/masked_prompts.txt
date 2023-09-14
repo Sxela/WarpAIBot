@@ -1,0 +1,18 @@
+Q: How to use prompts with two or more characters?
+A: To effectively and consistently prompt multiple characters on a single frame you need Multiple Masked prompts
+
+For example, if you have Mario and Luigi characters, you will need at least 1 mask for one of the characters, the 1st character can be prompted together with the background. The prompt will look like that: 
+
+{0:['Mario','Luigi']}
+
+the gui - mask - mask_paths should look like this: 
+mask_path = ['/path/to/luigi/masks'] where /path/to/luigi/masks is the path to luigi mask video/folder with frames, etc.
+
+If you'd like to prompt the background separately from the characters (i.e. use 3 prompts), you will need 2 masks: 1 for Mario and 1 for Luigi. The background prompt will affect the unmasked areas. 
+
+The first prompt is always the background prompt, you don't need a mask for it.
+If you decide to use masks, you will need to provide them for every other prompt other than the 1st one. Each next prompt+mask will be placed on top of the previous, only white areas of the mask will be preserved. For example, if your 2nd prompt mask is completely covering the 1st prompt mask, you will not see the 1st prompt in the output as it will be covered by the 2nd prompt mask completely.
+
+You need to specify path to your mask frames/video in the gui - mask - mask_paths variable. for 2 prompts you will need 1 mask, for 3 prompt - 2 masks, etc. The 1st prompt is always for the background (unmasked area).
+
+Leave mask_paths=[] to disable prompt masks. Enabling prompt masks will effectively disable prompt weights.

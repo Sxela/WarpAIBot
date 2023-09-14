@@ -1,0 +1,3 @@
+Q: What is warp_towards_init?
+A: Here`s what I know about warp_towards_init ( warp towards init ) or what it`s used for:
+Experimental. After a frame is stylized, computes the difference between output and input for that frame, and warps the output back to input, preserving its shape.

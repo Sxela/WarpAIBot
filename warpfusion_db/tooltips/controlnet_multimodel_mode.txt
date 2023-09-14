@@ -1,0 +1,3 @@
+Q: What is controlnet_multimodel_mode?
+A: Here`s what I know about controlnet_multimodel_mode ( controlnet multimodel mode ) or what it`s used for:
+internal - sums controlnet values before feeding those into diffusion model, external - sum outputs of differnet contolnets after passing through diffusion model. external seems slower but smoother.

@@ -1,0 +1,3 @@
+Q: What is blend_latent_to_init?
+A: Here`s what I know about blend_latent_to_init ( blend latent to init ) or what it`s used for:
+Blend latent vector with raw init

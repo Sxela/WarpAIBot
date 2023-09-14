@@ -1,0 +1,3 @@
+Q: What is missed_consistency_weight?
+A: Here`s what I know about missed_consistency_weight ( missed consistency weight ) or what it`s used for:
+Multiplier for incorrectly predicted\moved areas. For example, if an object moves and background appears behind it. We can predict what to put in that spot, so we can either duplicate the object, resulting in trail, or use init video data for that region.

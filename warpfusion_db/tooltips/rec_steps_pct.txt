@@ -1,0 +1,3 @@
+Q: What is rec_steps_pct?
+A: Here`s what I know about rec_steps_pct ( rec steps pct ) or what it`s used for:
+Reconstructed noise steps in relation to total steps. 1=100% steps.

@@ -1,0 +1,3 @@
+Q: What is temporalnet_skip_1st_frame?
+A: Here`s what I know about temporalnet_skip_1st_frame ( temporalnet skip 1st frame ) or what it`s used for:
+Skip temporalnet for 1st frame (if not skipped, will use raw init for guidance

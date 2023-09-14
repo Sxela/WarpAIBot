@@ -1,0 +1,3 @@
+Q: What is max_faces?
+A: Here`s what I know about max_faces ( max faces ) or what it`s used for:
+Max faces to detect. Control net face parameters

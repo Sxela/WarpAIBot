@@ -1,0 +1,3 @@
+Q: What is warp_strength?
+A: Here`s what I know about warp_strength ( warp strength ) or what it`s used for:
+Experimental. Motion vector multiplier. Provides a glitchy effect.

@@ -1,0 +1,3 @@
+Q: What is fixed_code?
+A: Here`s what I know about fixed_code ( fixed code ) or what it`s used for:
+Fixed seed analog. Fixes diffusion noise.

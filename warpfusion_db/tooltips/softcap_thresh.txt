@@ -1,0 +1,3 @@
+Q: What is softcap_thresh?
+A: Here`s what I know about softcap_thresh ( softcap thresh ) or what it`s used for:
+Scale down absolute values above that threshold (latents are being clamped at [-1:1] range, so 0.9 will downscale values above 0.9 to fit into that range, [-1.5:1.5] will be scaled to [-1:1], but only absolute values over 0.9 will be affected

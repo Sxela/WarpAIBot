@@ -1,0 +1,3 @@
+Q: What is turbo_mode?
+A: Here`s what I know about turbo_mode ( turbo mode ) or what it`s used for:
+Turbo mode skips diffusion process on turbo_steps number of frames. Frames are still being warped and blended. Speeds up the render at the cost of possible trails an ghosting.

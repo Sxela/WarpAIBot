@@ -1,0 +1,3 @@
+Q: What is control_sd15_inpaint_mask_source?
+A: Here`s what I know about control_sd15_inpaint_mask_source ( control sd15 inpaint mask source ) or what it`s used for:
+Inpainting controlnet mask source. consistency_mask - inpaints inconsistent areas, None - whole image, cond_video - loads external mask

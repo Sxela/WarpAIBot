@@ -1,0 +1,3 @@
+Q: What is controlnet_mode?
+A: Here`s what I know about controlnet_mode ( controlnet mode ) or what it`s used for:
+Controlnet mode. Pay more attention to controlnet prediction, to prompt or somewhere in-between.

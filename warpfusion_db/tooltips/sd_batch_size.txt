@@ -1,0 +1,3 @@
+Q: What is sd_batch_size?
+A: Here`s what I know about sd_batch_size ( sd batch size ) or what it`s used for:
+Diffusion batch size. Default=2 for 1 positive + 1 negative prompt. 

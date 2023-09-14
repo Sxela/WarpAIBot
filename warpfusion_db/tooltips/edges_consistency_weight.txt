@@ -1,0 +1,3 @@
+Q: What is edges_consistency_weight?
+A: Here`s what I know about edges_consistency_weight ( edges consistency weight ) or what it`s used for:
+Multiplier for motion edges. Moving objects are most likely to leave trails, this option together with missed consistency weight helps prevent that, but in a more subtle manner.

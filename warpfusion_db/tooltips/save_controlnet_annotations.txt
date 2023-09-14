@@ -1,0 +1,3 @@
+Q: What is save_controlnet_annotations?
+A: Here`s what I know about save_controlnet_annotations ( save controlnet annotations ) or what it`s used for:
+Save controlnet annotator predictions. They will be saved to your project dir /controlnetDebug folder.

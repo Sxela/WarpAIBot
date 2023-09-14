@@ -1,0 +1,3 @@
+Q: What is temporalnet_source?
+A: Here`s what I know about temporalnet_source ( temporalnet source ) or what it`s used for:
+Temporalnet guidance source. Previous init or previous stylized frame

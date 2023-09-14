@@ -1,0 +1,3 @@
+Q: What is clamp_max?
+A: Here`s what I know about clamp_max ( clamp max ) or what it`s used for:
+limit the effect of external conditioning per diffusion step

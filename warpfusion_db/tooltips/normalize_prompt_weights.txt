@@ -1,0 +1,3 @@
+Q: What is normalize_prompt_weights?
+A: Here`s what I know about normalize_prompt_weights ( normalize prompt weights ) or what it`s used for:
+Scale prompt weights to sum up to 1.

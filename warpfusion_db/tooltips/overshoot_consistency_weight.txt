@@ -1,0 +1,3 @@
+Q: What is overshoot_consistency_weight?
+A: Here`s what I know about overshoot_consistency_weight ( overshoot consistency weight ) or what it`s used for:
+Multiplier for areas that appeared out of the frame. We can either leave them black or use raw init video.

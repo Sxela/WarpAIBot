@@ -1,0 +1,3 @@
+Q: What is clamp_grad?
+A: Here`s what I know about clamp_grad ( clamp grad ) or what it`s used for:
+Enable limiting the effect of external conditioning per diffusion step

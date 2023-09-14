@@ -1,0 +1,3 @@
+Q: What is deflicker_latent_scale?
+A: Here`s what I know about deflicker_latent_scale ( deflicker latent scale ) or what it`s used for:
+Deflicker loss scale in image latent space

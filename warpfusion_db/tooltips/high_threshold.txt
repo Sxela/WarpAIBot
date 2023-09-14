@@ -1,0 +1,3 @@
+Q: What is high_threshold?
+A: Here`s what I know about high_threshold ( high threshold ) or what it`s used for:
+Control net canny filter parameters

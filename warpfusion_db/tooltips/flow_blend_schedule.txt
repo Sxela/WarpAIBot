@@ -1,0 +1,3 @@
+Q: What is flow_blend_schedule?
+A: Here`s what I know about flow_blend_schedule ( flow blend schedule ) or what it`s used for:
+Blend current raw init video frame with previously stylised frame with respect to consistency mask. 0 - raw frame, 1 - stylized frame

@@ -1,0 +1,3 @@
+Q: What is grad_denoised?
+A: Here`s what I know about grad_denoised ( grad denoised ) or what it`s used for:
+Fastest, On by default, calculate gradients with respect to denoised image instead of input image per diffusion step.

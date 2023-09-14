@@ -1,0 +1,3 @@
+Q: What is offload_model?
+A: Here`s what I know about offload_model ( offload model ) or what it`s used for:
+Offload unused models to CPU and back to GPU to save VRAM. May reduce speed.

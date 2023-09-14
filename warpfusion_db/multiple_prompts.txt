@@ -1,0 +1,43 @@
+Q: How to use multiple prompts?
+A: You can use multiple prompts per frame like this:
+
+```{0:['a cat','a dog']}```
+
+In this case with no weights specify it will give each prompt a weight of 1. 
+Prompt weights are used to linearly interpolate between prompts (blend). 
+
+You can specify weights like this: ```{0:['a cat:2','a dog:0.5']}```
+In this example 'a cat' with have a weight of 2 and 'a dog' will have a weight of 0.5, and the resulting image for this frame will look like 
+image('a cat')*2 + image('a dog')*0.5
+
+The weights should be at the end of the prompt.
+
+
+normalize_prompt_weights: enable to normalize weights to add up to 1.
+
+For example this prompt ```{0:['a cat:2','a dog:0.5']}``` with normalize_prompt_weights on will effectively have weights ```{0:['a cat:0.8','a dog:0.2']}```  and the resulting image for this frame will look like 
+image('a cat')*0.8 + image('a dog')*0.2
+
+Prompt weights can be animated, but the weight will be applied to the specific prompt number, not exact text. So ```{0:['prompt1:1', 'prompt2:0'], 5: ['prompt1:0', 'prompt3:1']}``` will blend the weights but not the prompts, so you will have prompt1 until frame5, then it will be replaced with prompt3, but the weights will be animated, so that a prompt for a frame between 0 and 5 will look like ```['prompt1:0.5', 'prompt2:0.5']```
+
+You can have different number of prompts per frame, but the weights for prompts missing in a frame will be set to 0
+
+For example, if you have: 
+
+```{0:['a cat:1', 'a landscape:0'], 5: ['a cat:0', 'a landscape:1'], 10:['a cat:0', 'a landscape:1', 'a galaxy:1']}```
+
+'a galaxy' prompt will have 0 weight for all frames where it's missing, and will have weight 1 at frame 10 
+
+Each additional prompt adds +50% to vram usage and diffusion render times.
+
+Masked prompts
+You can now use masks for your prompts. The logic is a bit complicated, but I hope you'll get the idea. 
+
+You can use masks if you have more than one prompt.
+
+The first prompt is always the background prompt, you don't need a mask for it.
+If you decide to use masks, you will need to provide them for every other prompt other than the 1st one. Each next prompt+mask will be placed on top of the previous, only white areas of the mask will be preserved. For example, if your 2nd prompt mask is completely covering the 1st prompt mask, you will not see the 1st prompt in the output as it will be covered by the 2nd prompt mask completely.
+
+You need to specify path to your mask frames/video in the mask_paths variable. for 2 prompts you will need 1 mask, for 3 prompt - 2 masks, etc. 
+
+Leave ```mask_paths=[]``` to disable prompt masks. Enabling prompt masks will effectively disable prompt weights. 

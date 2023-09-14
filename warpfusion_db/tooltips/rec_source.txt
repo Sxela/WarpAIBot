@@ -1,0 +1,3 @@
+Q: What is rec_source?
+A: Here`s what I know about rec_source ( rec source ) or what it`s used for:
+Source for noise reconstruction. Either raw init frame or stylized frame.
