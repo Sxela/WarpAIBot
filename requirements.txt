@@ -1,5 +1,5 @@
 pip
-langchain==0.0.228 
+langchain==0.0.246 
 chromadb==0.3.26 
 sentence-transformers==2.2.2 
 auto-gptq==0.2.2 
