@@ -9,3 +9,4 @@ transformers==4.30.2
 unstructured
 pandas
 discord.py
+pytesseract

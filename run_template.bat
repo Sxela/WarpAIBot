@@ -29,6 +29,7 @@ set IS_LOCAL_INSTALL=1
 set BOT_TOKEN=put your bot token here
 set ADMIN=your account id 
 set CHANNELS=[list, of, your, channel, ids]
+set TESSERACT=C:\Program Files\Tesseract-OCR\tesseract.exe
 
 echo Activating virtual environment 
 call %venv_dir%\Scripts\activate"

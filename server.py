@@ -15,9 +15,14 @@ from transformers import AutoTokenizer, GenerationConfig, TextStreamer, pipeline
 import discord
 from discord.ext import commands
 
+import pytesseract
+from PIL import Image
+
+
 BOT_TOKEN = os.environ.get('BOT_TOKEN') #string
 ADMIN = int(os.environ.get('ADMIN')) #int
 CHANNELS = eval(os.environ.get('CHANNELS')) #list of ints
+pytesseract.pytesseract.tesseract_cmd = os.environ.get('TESSERACT')
 
 model_name_or_path = "TheBloke/WizardLM-13B-V1.2-GPTQ"
 model_basename = "model"
@@ -245,6 +250,14 @@ async def send_msgs(response, response_tail, message):
             await message.channel.send(f'<@{user_id}> {response_tail[:max_body_len]}')
     else:
             await message.channel.send(f'<@{user_id}> {response} {response_tail}')
+
+config = '-l eng --oem 1 --psm 6'
+# Function to extract text from an image using pytesseract
+def extract_text_from_image(image_path):
+    img = Image.open(image_path)
+    text = pytesseract.image_to_string(img, config=config)
+    return text
+
 # Event handler for when the bot is ready
 @bot.event
 async def on_ready():
@@ -264,6 +277,20 @@ async def on_message(message):
             chat_id = message.channel.id
             server_id = message.guild.id
             user_message = message.content
+            
+            if len(message.attachments) > 0:
+                for attachment in message.attachments:
+                    if attachment.url.endswith(('jpg', 'jpeg', 'png', 'gif')):
+                        # Download the image
+                        img = f'image_{message.author.id}.jpg'
+                        await attachment.save(img)
+
+                        # Extract text from the image
+                        ocr = extract_text_from_image(img)
+                        user_message += '\nI`m having this error message: \n' + ocr 
+                        #delete the image
+                        os.unlink(img)  
+                        await message.channel.send(f'<@{user_id}> I have recognized this in your image:\n```{ocr}```')
 
             # Call the abstract function and get the response
             response, response_tail = custom_response(user_id, chat_id, server_id, user_message)
