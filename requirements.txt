@@ -10,3 +10,4 @@ unstructured
 pandas
 discord.py
 pytesseract
+openai

@@ -2,7 +2,7 @@ import os
 import shutil
 from pathlib import Path
 import torch
-from auto_gptq import AutoGPTQForCausalLM 
+
 from langchain.chains.question_answering import load_qa_chain
 from langchain.document_loaders import DirectoryLoader
 from langchain.embeddings import HuggingFaceEmbeddings
@@ -52,32 +52,39 @@ outdir.mkdir(exist_ok=True, parents=True)
 device = torch.device('cuda')
 use_triton = False
 
-tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, use_fast=True)
-model = AutoGPTQForCausalLM.from_quantized(model_name_or_path,
-        model_basename=model_basename,
-        use_safetensors=True,
-        trust_remote_code=True,
-        device='cuda:0',
-        use_triton=use_triton,
-        quantize_config=None)
+print(os.environ.keys())
+if 'OPENAI_API_KEY' in os.environ.keys():
+    print('Using chatgpt')
+    from langchain.llms import OpenAIChat 
+    llm = OpenAIChat (model='gpt-3.5-turbo-16k')
+else:
+    from auto_gptq import AutoGPTQForCausalLM 
+    tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, use_fast=True)
+    model = AutoGPTQForCausalLM.from_quantized(model_name_or_path,
+            model_basename=model_basename,
+            use_safetensors=True,
+            trust_remote_code=True,
+            device='cuda:0',
+            use_triton=use_triton,
+            quantize_config=None)
 
-generation_config = GenerationConfig.from_pretrained(model_name_or_path)
-streamer = TextStreamer(
-    tokenizer, skip_prompt=True, skip_special_tokens=True, use_multiprocessing=False)
+    generation_config = GenerationConfig.from_pretrained(model_name_or_path)
+    streamer = TextStreamer(
+        tokenizer, skip_prompt=True, skip_special_tokens=True, use_multiprocessing=False)
 
-pipe = pipeline(
-    'text-generation',
-    model=model,
-    tokenizer=tokenizer,
-    max_length=2048,
-    temperature=0.3,
-    top_p=0.95,
-    repetition_penalty=1.15,
-    do_sample=True,
-    generation_config=generation_config,
-    streamer=streamer, batch_size=1)
+    pipe = pipeline(
+        'text-generation',
+        model=model,
+        tokenizer=tokenizer,
+        max_length=2048,
+        temperature=0.3,
+        top_p=0.95,
+        repetition_penalty=1.15,
+        do_sample=True,
+        generation_config=generation_config,
+        streamer=streamer, batch_size=1)
 
-llm = HuggingFacePipeline(pipeline=pipe)
+    llm = HuggingFacePipeline(pipeline=pipe)
 
 embeddings = HuggingFaceEmbeddings(
     model_name='embaas/sentence-transformers-multilingual-e5-base', model_kwargs={"device":device})
