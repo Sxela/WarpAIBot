@@ -294,10 +294,13 @@ async def on_message(message):
 
                         # Extract text from the image
                         ocr = extract_text_from_image(img)
-                        user_message += '\nI`m having this error message: \n' + ocr 
+                        
                         #delete the image
                         os.unlink(img)  
+                        if len(ocr)>1800: ocr = ocr[-1800:]
                         await message.channel.send(f'<@{user_id}> I have recognized this in your image:\n```{ocr}```')
+                        if len(ocr)>500: ocr = ocr[-500:]
+                        user_message += '\nI`m having this error message: \n' + ocr 
 
             # Call the abstract function and get the response
             response, response_tail = custom_response(user_id, chat_id, server_id, user_message)
