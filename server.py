@@ -30,6 +30,7 @@ model_basename = "model"
 max_body_len = 1800 #max length of answer+quoted docs
 database_dir = './warpfusion_db/' #folder with txt files
 max_history = 4 #remember last messages
+chatgpt_max_history = 8
 max_msg_len = 100 #when replying to user, limit doc quote to this length if a db doc has a discord url
 max_nonmsg_len = 1000  #when replying to user, limit doc quote to this length for an internal db doc (no discord link)
 min_comment_len = 4 #minimum length of a comment to be added to db
@@ -51,12 +52,14 @@ Keep your replies short, compassionate, and informative.
 outdir.mkdir(exist_ok=True, parents=True)
 device = torch.device('cuda')
 use_triton = False
-
+is_chatgpt = False
 print(os.environ.keys())
 if 'OPENAI_API_KEY' in os.environ.keys():
     print('Using chatgpt')
-    from langchain.llms import OpenAIChat 
-    llm = OpenAIChat (model='gpt-3.5-turbo-16k')
+    is_chatgpt = True
+    max_history = chatgpt_max_history
+    from  langchain.chat_models import ChatOpenAI
+    llm = ChatOpenAI(model='gpt-3.5-turbo-16k')
 else:
     from auto_gptq import AutoGPTQForCausalLM 
     tokenizer = AutoTokenizer.from_pretrained(model_name_or_path, use_fast=True)
@@ -299,7 +302,8 @@ async def on_message(message):
                         os.unlink(img)  
                         if len(ocr)>1800: ocr = ocr[-1800:]
                         await message.channel.send(f'<@{user_id}> I have recognized this in your image:\n```{ocr}```')
-                        if len(ocr)>500: ocr = ocr[-500:]
+                        
+                        if len(ocr)>500 and not is_chatgpt: ocr = ocr[-500:]
                         user_message += '\nI`m having this error message: \n' + ocr 
 
             # Call the abstract function and get the response
